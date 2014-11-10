@@ -1,6 +1,6 @@
 # jeera
 
-![](http://en.wikipedia.org/wiki/Jeera_rice#mediaviewer/File:Jeera-rice.JPG)
+![](http://photon.abstractj.org/Jeera-rice.jpg)
 
 Another Jira command line interface based on [jilla](https://github.com/godmodelabs/jilla) and [jira-cmd](https://github.com/germanrcuriel/jira-cmd)
 

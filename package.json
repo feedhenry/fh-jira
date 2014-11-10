@@ -1,8 +1,8 @@
 {
-  "name": "jira-cmd",
-  "description": "Another JIRA Command Line Interface",
-  "version": "0.1.4",
-  "author": "Germán Robledo <germanrcuriel@gmail.com>",
+  "name": "jeera",
+  "description": "Another JIRA Command Line Interface forked from jira-cmd",
+  "version": "0.1.0",
+  "author": "Bruno Oliveira<bruno@abstractj.org>",
   "dependencies": {
     "commander": "~1.1.1",
     "requirejs": "~2.1.5",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/germanrcuriel/jira-cmd.git"
+    "url": "git://github.com/abstractj/jeera.git"
   },
   "bin": {
     "jira": "./bin/jira.js"
