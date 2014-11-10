@@ -26,6 +26,6 @@
     "url": "git://github.com/abstractj/jeera.git"
   },
   "bin": {
-    "jira": "./bin/jira.js"
+    "jeera": "./bin/jira.js"
   }
 }
