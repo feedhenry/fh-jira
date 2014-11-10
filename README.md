@@ -1,8 +1,12 @@
-# jira-cmd
+# jeera
 
-A Jira command line interface based on [jilla](https://github.com/godmodelabs/jilla).
+![](http://en.wikipedia.org/wiki/Jeera_rice#mediaviewer/File:Jeera-rice.JPG)
 
-[![NPM](https://nodei.co/npm/jira-cmd.png?downloads=true&stars=true)](https://nodei.co/npm/jira-cmd/)
+Another Jira command line interface based on [jilla](https://github.com/godmodelabs/jilla) and [jira-cmd](https://github.com/germanrcuriel/jira-cmd)
+
+[![NPM](https://nodei.co/npm/jeera.png?downloads=true&stars=true)](https://nodei.co/npm/jeera/)
+
+Note: It was forked and adapted from [jira-cmd](https://github.com/germanrcuriel/jira-cmd) to my own needs.
 
 ## Installation
 
@@ -10,13 +14,13 @@ Install [node.js](http://nodejs.org/).
 
 Then, in your shell type:
 
-    $ npm install -g jira-cmd
+    $ npm install -g jeera
 
 ## Usage
 
 ##### First use
 
-    $ jira
+    $ jeera
     Jira URL: https://jira.atlassian.com/
     Username: xxxxxx
     Password: xxxxxx
