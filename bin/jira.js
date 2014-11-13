@@ -28,6 +28,7 @@ requirejs([
     .option('-t, --type <name>', 'Filter by type', String)
     .option('-w, --watching',  'List all watched issues by type')
     .option('-m, --mention',  'List all by mention based on the current user')
+    .option('-r, --recent',  'List all the recent issues created by project')
     .action(function (options) {
       auth.setConfig(function (auth) {
         if (auth) {
@@ -35,6 +36,8 @@ requirejs([
             ls.showWatchingByProject(options.project, options.type);
           } else if (options.mention && options.project) {
             ls.showMentionByProject(options.project, options.type);
+          } else if (options.recent && options.project) {
+            ls.showProjectByRecentlyUpdated(options.project, options.type);
           } else if (options.project) {
             ls.showByProject(options.project, options.type);
           } else if (options.watching) {
