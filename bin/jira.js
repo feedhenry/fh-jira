@@ -226,10 +226,12 @@ requirejs([
   program
     .command('report')
     .description('Generate a weekly report')
-    .action(function (issue) {
-      auth.setConfig(function (auth) {
+    .option('-c, --compact',  'Compact view')
+    .option('-t, --text',  'Text view')
+    .action(function (options) {
+      auth.setConfig(function () {
         if (auth) {
-          ls.weeklyReport();
+          ls.weeklyReport(options);
         }
       });
     });
