@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jasonmadigan/jeera.git"
+    "url": "git://github.com/feedhenry/fh-jira.git"
   },
   "bin": {
     "jira": "./bin/jira.js"
