@@ -1,12 +1,10 @@
-# jeera
+# fh-jira
 
-![](http://photon.abstractj.org/Jeera-rice.jpg)
+Another JIRA command line interface based on [jilla](https://github.com/godmodelabs/jilla) and [jira-cmd](https://github.com/germanrcuriel/jira-cmd) and [jeera](https://github.com/abstractj/jeera)
 
-Another Jira command line interface based on [jilla](https://github.com/godmodelabs/jilla) and [jira-cmd](https://github.com/germanrcuriel/jira-cmd)
+[![NPM](https://nodei.co/npm/fh-jira.png?downloads=true&stars=true)](https://nodei.co/npm/fh-jira/)
 
-[![NPM](https://nodei.co/npm/jeera.png?downloads=true&stars=true)](https://nodei.co/npm/jeera/)
-
-Note: It was forked and adapted from [jira-cmd](https://github.com/germanrcuriel/jira-cmd) to my own needs.
+NOTE: This is a fork of a fork abstractj's jeera fork. Thanks abstractj!
 
 ## Installation
 
@@ -14,13 +12,13 @@ Install [node.js](http://nodejs.org/).
 
 Then, in your shell type:
 
-    $ npm install -g jeera
+    $ npm install -g fh-jira
 
 ## Usage
 
 ##### First use
 
-    $ jeera
+    $ jira
     Jira URL: https://jira.atlassian.com/
     Username: xxxxxx
     Password: xxxxxx
@@ -32,28 +30,30 @@ This save your credentials (base64 encoded) in your `$HOME/.jira` folder.
 
 Usage: jira [options] [command]
 
-  Commands:
+Commands:
 
-    ls [options]           List my issues
-    start <issue>          Start working on an issue.
-    stop <issue>           Stop working on an issue.
-    review <issue> [assignee] Mark issue as being reviewed [by assignee(optional)].
-    done <issue>           Mark issue as finnished.
-    running                List issues in progress.
-    jql <query>            Run JQL query
-    search <term>          Find issues.
-    assign <issue> [user]  Assign an issue to <user>. Provide only issue# to assign to me
-    comment <issue> [text] Comment an issue.
-    show [options] <issue> Show info about an issue
-    create                 Create an issue or a sub-task
-    config [options]       Change configuration
+  ls [options]           List my issues
+  start <issue>          Start working on an issue.
+  coding <issue>         Start coding an issue.
+  stop <issue>           Stop working on an issue.
+  review <issue> [assignee] Mark issue as being reviewed [by assignee(optional)].
+  resolve <issue>        Mark issue as resolved.
+  done <issue>           Mark issue as finished.
+  running                List issues in progress.
+  jql <query>            Run JQL query
+  search <term>          Find issues.
+  assign <issue> [user]  Assign an issue to <user>. Provide only issue# to assign to me
+  comment <issue> [text] Comment an issue.
+  show [options] <issue> Show info about an issue
+  create                 Create an issue or a sub-task
+  open <issue>           Open an Issue in your browser
+  report                 Generate a weekly report
+  config [options]       Change configuration
 
-  Options:
+Options:
 
-    -h, --help     output usage information
-    -V, --version  output the version number
-
-Each command have individual usage help (using --help or -h)
+  -h, --help     output usage information
+  -V, --version  output the version number
 
 ## MIT License
 

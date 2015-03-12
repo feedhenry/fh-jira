@@ -1,13 +1,14 @@
 {
-  "name": "jeera",
-  "description": "Another JIRA Command Line Interface forked from jira-cmd",
-  "version": "0.1.3",
-  "author": "Bruno Oliveira<bruno@abstractj.org>",
+  "name": "fh-jira",
+  "description": "Yet Another JIRA Command Line Interface forked from jeera, which forked from jira-cmd",
+  "version": "1.0.0",
+  "author": "Jason Madigan <jmadigan@redhat.com>",
   "dependencies": {
+    "cli-table": "~0.2.0",
     "commander": "~1.1.1",
+    "opn": "^1.0.1",
     "requirejs": "~2.1.5",
-    "superagent": "~0.13.0",
-    "cli-table": "~0.2.0"
+    "superagent": "~0.13.0"
   },
   "engines": {
     "node": ">= 0.8"
@@ -23,9 +24,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/abstractj/jeera.git"
+    "url": "git://github.com/jasonmadigan/jeera.git"
   },
   "bin": {
-    "jeera": "./bin/jira.js"
+    "jira": "./bin/jira.js"
   }
 }
