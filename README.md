@@ -30,30 +30,32 @@ This save your credentials (base64 encoded) in your `$HOME/.jira` folder.
 
 ##### Help
 
-Usage: jira [options] [command]
+    Usage: jira [options] [command]
 
-  Commands:
+    Commands:
 
-    ls [options]           List my issues
-    start <issue>          Start working on an issue.
-    stop <issue>           Stop working on an issue.
-    review <issue> [assignee] Mark issue as being reviewed [by assignee(optional)].
-    done <issue>           Mark issue as finnished.
-    running                List issues in progress.
-    jql <query>            Run JQL query
-    search <term>          Find issues.
-    assign <issue> [user]  Assign an issue to <user>. Provide only issue# to assign to me
-    comment <issue> [text] Comment an issue.
-    show [options] <issue> Show info about an issue
-    create                 Create an issue or a sub-task
-    config [options]       Change configuration
+      ls [options]           List my issues
+      start <issue>          Start working on an issue.
+      coding <issue>         Start coding an issue.
+      stop <issue>           Stop working on an issue.
+      review <issue> [assignee] Mark issue as being reviewed [by assignee(optional)].
+      resolve <issue>        Mark issue as resolved.
+      done <issue>           Mark issue as finished.
+      running                List issues in progress.
+      jql <query>            Run JQL query
+      search <term>          Find issues.
+      assign <issue> [user]  Assign an issue to <user>. Provide only issue# to assign to me
+      comment <issue> [text] Comment an issue.
+      show [options] <issue> Show info about an issue
+      create                 Create an issue or a sub-task
+      open <issue>           Open an Issue in your browser
+      report [options]       Generate a weekly report
+      config [options]       Change configuration
 
-  Options:
+    Options:
 
-    -h, --help     output usage information
-    -V, --version  output the version number
-
-Each command have individual usage help (using --help or -h)
+      -h, --help     output usage information
+      -V, --version  output the version number
 
 ## MIT License
 
@@ -64,4 +66,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-

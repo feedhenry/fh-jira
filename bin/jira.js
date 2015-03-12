@@ -15,8 +15,9 @@ requirejs([
   '../lib/jira/assign',
   '../lib/jira/comment',
   '../lib/jira/create',
-  '../lib/jira/transitions'
-], function (program, config, auth, ls, describe, assign, comment, create, transitions) {
+  '../lib/jira/transitions',
+  '../lib/jira/open'
+], function (program, config, auth, ls, describe, assign, comment, create, transitions, open) {
 
   program
     .version('v0.1.3');
@@ -207,6 +208,30 @@ requirejs([
       auth.setConfig(function (auth) {
         if (auth) {
           create.newIssue();
+        }
+      });
+    });
+
+  program
+    .command('open <issue>')
+    .description('Open an Issue in your browser')
+    .action(function (issue) {
+      auth.setConfig(function (auth) {
+        if (auth) {
+          open.inBrowser(issue);
+        }
+      });
+    });
+
+  program
+    .command('report')
+    .description('Generate a weekly report')
+    .option('-c, --compact',  'Compact view')
+    .option('-t, --text',  'Text view')
+    .action(function (options) {
+      auth.setConfig(function () {
+        if (auth) {
+          ls.weeklyReport(options);
         }
       });
     });
