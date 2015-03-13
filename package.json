@@ -14,7 +14,6 @@
     "cli-table": "~0.2.0",
     "commander": "~1.1.1",
     "opn": "^1.0.1",
-    "requirejs": "~2.1.5",
     "superagent": "~0.13.0"
   },
   "engines": {
