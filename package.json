@@ -3,6 +3,13 @@
   "description": "Another JIRA Command Line Interface forked from jira-cmd",
   "version": "0.2.0",
   "author": "Bruno Oliveira<bruno@abstractj.org>",
+  "contributors": [{
+    "name": "Jason Madigan",
+    "email": "jmadigan@redhat.com"
+  },{
+    "name": "Cian Clarke",
+    "email": "ciclarke@redhat.com"
+  }],
   "dependencies": {
     "cli-table": "~0.2.0",
     "commander": "~1.1.1",
@@ -27,6 +34,7 @@
     "url": "git://github.com/abstractj/jeera.git"
   },
   "bin": {
-    "jeera": "./bin/jira.js"
+    "jeera": "./bin/jira.js",
+    "jira": "./bin/jira.js"
   }
 }
